@@ -9,11 +9,11 @@
 
 ## Установка
 
-### Клонировать репозиторий:
+Клонировать репозиторий:
 ```
 git clone https://github.com/kh199/infra_sp2
 ```
-### Создать и заполнить файл .env:
+Создать и заполнить файл .env:
 ```
 DB_ENGINE=django.db.backends.postgresql
 DB_NAME=postgres
@@ -22,27 +22,27 @@ POSTGRES_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
 ```
-### Запустить docker-compose с помощью команды:
+Запустить docker-compose с помощью команды:
 ```
 docker-compose up -d
 ```
-### Выполнить миграции:
+Выполнить миграции:
 ```
 docker-compose exec web python manage.py migrate
 ```
-### Создать суперпользователя:
+Создать суперпользователя:
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
-### Подгрузить статику командой:
+Подгрузить статику командой:
 ```
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
-### Заполнить базу тестовыми данными:
+Заполнить базу тестовыми данными:
 ```
 docker-compose exec web python manage.py loaddata fixtures.json
 ```
-### Создать суперпользователя:
+Создать суперпользователя:
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
