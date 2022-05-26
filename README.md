@@ -47,7 +47,7 @@ docker-compose exec web python manage.py loaddata fixtures.json
 docker-compose exec web python manage.py createsuperuser
 ```
 
-# Авторы
+## Авторы
 + **Евгений Альбрант** [albrant](https://github.com/albrant)
 + **Екатерина Каричева** [kh199](https://github.com/kh199)
 + **Анастасия Нестеренко** [AnastasiaNesterenko](https://github.com/AnastasiaNesterenko)
