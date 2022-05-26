@@ -22,7 +22,7 @@ POSTGRES_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
 ```
-Запустить docker-compose с помощью команды:
+Запустить docker-compose:
 ```
 docker-compose up -d
 ```
@@ -34,7 +34,7 @@ docker-compose exec web python manage.py migrate
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
-Подгрузить статику командой:
+Подгрузить статику:
 ```
 docker-compose exec web python manage.py collectstatic --no-input 
 ```
@@ -46,3 +46,8 @@ docker-compose exec web python manage.py loaddata fixtures.json
 ```
 docker-compose exec web python manage.py createsuperuser
 ```
+
+# Авторы
++ **Евгений Альбрант** [albrant](https://github.com/albrant)
++ **Екатерина Каричева** [kh199](https://github.com/kh199)
++ **Анастасия Нестеренко** [AnastasiaNesterenko](https://github.com/AnastasiaNesterenko)
